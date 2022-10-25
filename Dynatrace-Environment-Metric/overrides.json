@@ -1,0 +1,16 @@
+{
+  "CREATE": {
+    "/Id": "custom:CFNPublish",
+    "/DisplayName": "CFN Publishing",
+    "/Unit": "Count (count)",
+    "/Dimensions": ["nic"],
+    "/Types": ["F5-Firewall"]
+  },
+  "UPDATE": {
+    "/Id": "custom:CFNPublish",
+    "/DisplayName": "CFN Publishing",
+    "/Unit": "Count (count)",
+    "/Dimensions": ["nic"],
+    "/Types": ["F5-Firewall"]
+  }
+}
