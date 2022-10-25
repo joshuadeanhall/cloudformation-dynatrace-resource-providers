@@ -2,145 +2,89 @@
   "CREATE": {
     "/Metadata": {
       "ConfigurationVersions": [
-        4,
-        2
+        6
       ],
-      "ClusterVersion": "Mock version"
+      "ClusterVersion": "1.252.168.20221017-141140"
     },
     "/DashboardMetadata": {
       "Name": "End-to-End Dashboard (created by Dynatrace::Configuration::Dashboard)",
       "Owner": "CloudFormation",
       "Shared": true,
+      "DashboardFilter": null,
       "Tags": [
         "CloudFormation"
       ],
       "DynamicFilters": {
         "Filters": [
           "SERVICE_TYPE"
-        ],
-        "TagSuggestionTypes": [
-          "HOST_LIKE"
         ]
-      }
+      },
+      "TilesNameSize": null,
+      "HasConsistentColors": false
     },
     "/Tiles": [
       {
-        "name": "Hosts",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
+        "Name": "Hosts",
+        "NameSize": null,
+        "TileType": "HEADER",
+        "Configured": true,
+        "Bounds": {
           "top": 0,
           "left": 0,
           "width": 304,
           "height": 38
         },
-        "tileFilter": {}
-      },
-      {
-        "name": "Applications",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
-          "top": 0,
-          "left": 304,
-          "width": 304,
-          "height": 38
-        },
-        "tileFilter": {}
-      },
-      {
-        "name": "Host health",
-        "tileType": "HOSTS",
-        "configured": true,
-        "bounds": {
-          "top": 38,
-          "left": 0,
-          "width": 304,
-          "height": 304
-        },
-        "tileFilter": {
-          "managementZone": {
-            "id": "3438779970106539862",
-            "name": "Example Management Zone"
-          }
-        },
-        "chartVisible": true
-      },
-      {
-        "name": "Application health",
-        "tileType": "APPLICATIONS",
-        "configured": true,
-        "bounds": {
-          "top": 38,
-          "left": 304,
-          "width": 304,
-          "height": 304
-        },
-        "tileFilter": {
-          "managementZone": {
-            "id": "3438779970106539862",
-            "name": "Example Management Zone"
-          }
-        },
-        "chartVisible": true
+        "TileFilter": {
+          "timeframe": null,
+          "managementZone": null
+        }
       }
-    ]
+    ],
+    "/TilesNameSize": null,
+    "/HasConsistentColors": false
   },
   "UPDATE": {
     "/Metadata": {
       "ConfigurationVersions": [
-        4,
-        2
+        6
       ],
-      "ClusterVersion": "Mock version"
+      "ClusterVersion": "1.252.168.20221017-141140"
     },
     "/DashboardMetadata": {
-      "Name": "End-to-End Dashboard (created by Dynatrace::Configuration::Dashboard) – UPDATED",
-      "Owner": "Someone",
-      "Shared": false,
+      "Name": "End-to-End Dashboard (created by Dynatrace::Configuration::Dashboard) Updated",
+      "Owner": "CloudFormation",
+      "Shared": true,
+      "DashboardFilter": null,
       "Tags": [
         "CloudFormation"
       ],
       "DynamicFilters": {
         "Filters": [
           "SERVICE_TYPE"
-        ],
-        "TagSuggestionTypes": [
-          "HOST_LIKE"
         ]
-      }
+      },
+      "TilesNameSize": null,
+      "HasConsistentColors": false
     },
     "/Tiles": [
       {
-        "name": "Hosts",
-        "tileType": "HEADER",
-        "configured": true,
-        "bounds": {
+        "Name": "Hosts",
+        "NameSize": null,
+        "TileType": "HEADER",
+        "Configured": true,
+        "Bounds": {
           "top": 0,
           "left": 0,
           "width": 304,
           "height": 38
         },
-        "tileFilter": {}
-      },
-      {
-        "name": "Host health",
-        "tileType": "HOSTS",
-        "configured": true,
-        "bounds": {
-          "top": 38,
-          "left": 0,
-          "width": 304,
-          "height": 304
-        },
-        "tileFilter": {
-          "managementZone": {
-            "id": "3438779970106539862",
-            "name": "Example Management Zone"
-          }
-        },
-        "chartVisible": true
+        "TileFilter": {
+          "timeframe": null,
+          "managementZone": null
+        }
       }
-    ]
+    ],
+    "/TilesNameSize": null,
+    "/HasConsistentColors": false
   }
 }

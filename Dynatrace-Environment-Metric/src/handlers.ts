@@ -41,7 +41,7 @@ class Resource extends AbstractDynatraceResource<ResourceModel, MetricPayload, M
     }
 
     async update(model: ResourceModel, typeConfiguration?: TypeConfigurationModel): Promise<MetricPayload> {
-        return this.create(model);
+        return this.create(model, typeConfiguration);
     }
 
     async delete(model: ResourceModel, typeConfiguration?: TypeConfigurationModel): Promise<void> {
