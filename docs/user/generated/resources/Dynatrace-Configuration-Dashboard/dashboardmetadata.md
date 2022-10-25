@@ -17,6 +17,7 @@ To declare this entity in your AWS CloudFormation template, use the following sy
     "<a href="#tags" title="Tags">Tags</a>" : <i>[ String, ... ]</i>,
     "<a href="#preset" title="Preset">Preset</a>" : <i>Boolean</i>,
     "<a href="#dynamicfilters" title="DynamicFilters">DynamicFilters</a>" : <i><a href="dynamicfilters.md">DynamicFilters</a></i>,
+    "<a href="#hasconsistentcolors" title="HasConsistentColors">HasConsistentColors</a>" : <i>Boolean</i>,
     "<a href="#tilesnamesize" title="TilesNameSize">TilesNameSize</a>" : <i>String</i>
 }
 </pre>
@@ -32,6 +33,7 @@ To declare this entity in your AWS CloudFormation template, use the following sy
       - String</i>
 <a href="#preset" title="Preset">Preset</a>: <i>Boolean</i>
 <a href="#dynamicfilters" title="DynamicFilters">DynamicFilters</a>: <i><a href="dynamicfilters.md">DynamicFilters</a></i>
+<a href="#hasconsistentcolors" title="HasConsistentColors">HasConsistentColors</a>: <i>Boolean</i>
 <a href="#tilesnamesize" title="TilesNameSize">TilesNameSize</a>: <i>String</i>
 </pre>
 
@@ -104,6 +106,16 @@ Dashboard filter configuration of a dashboard.
 _Required_: No
 
 _Type_: <a href="dynamicfilters.md">DynamicFilters</a>
+
+_Update requires_: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+#### HasConsistentColors
+
+JOSH FIX
+
+_Required_: No
+
+_Type_: Boolean
 
 _Update requires_: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 

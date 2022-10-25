@@ -18,8 +18,14 @@ export class ResourceModel extends BaseModel {
     @Type(() => DashboardMetadata)
     dashboardMetadata?: Optional<DashboardMetadata>;
     @Expose({ name: 'Tiles' })
-    @Type(() => Tile)
-    tiles?: Optional<Array<Tile>>;
+    @Transform(
+        (value: any, obj: any) =>
+            transformValue(Object, 'tiles', value, obj, [Array, Map]),
+        {
+            toClassOnly: true,
+        }
+    )
+    tiles?: Optional<Array<Map<string, object>>>;
     @Expose({ name: 'Id' })
     @Transform(
         (value: any, obj: any) =>
@@ -234,67 +240,6 @@ export class DynamicFilters extends BaseModel {
         }
     )
     tagSuggestionTypes?: Optional<Set<string>>;
-
-}
-
-export class Tile extends BaseModel {
-    ['constructor']: typeof Tile;
-
-
-    @Expose({ name: 'Name' })
-    @Transform(
-        (value: any, obj: any) =>
-            transformValue(String, 'name', value, obj, []),
-        {
-            toClassOnly: true,
-        }
-    )
-    name?: Optional<string>;
-    @Expose({ name: 'NameSize' })
-    @Transform(
-        (value: any, obj: any) =>
-            transformValue(String, 'nameSize', value, obj, []),
-        {
-            toClassOnly: true,
-        }
-    )
-    nameSize?: Optional<string>;
-    @Expose({ name: 'TileType' })
-    @Transform(
-        (value: any, obj: any) =>
-            transformValue(String, 'tileType', value, obj, []),
-        {
-            toClassOnly: true,
-        }
-    )
-    tileType?: Optional<string>;
-    @Expose({ name: 'Configured' })
-    @Transform(
-        (value: any, obj: any) =>
-            transformValue(Boolean, 'configured', value, obj, []),
-        {
-            toClassOnly: true,
-        }
-    )
-    configured?: Optional<boolean>;
-    @Expose({ name: 'Bounds' })
-    @Transform(
-        (value: any, obj: any) =>
-            transformValue(Object, 'bounds', value, obj, [Map]),
-        {
-            toClassOnly: true,
-        }
-    )
-    bounds?: Optional<Map<string, object>>;
-    @Expose({ name: 'TileFilter' })
-    @Transform(
-        (value: any, obj: any) =>
-            transformValue(Object, 'tileFilter', value, obj, [Map]),
-        {
-            toClassOnly: true,
-        }
-    )
-    tileFilter?: Optional<Map<string, object>>;
 
 }
 

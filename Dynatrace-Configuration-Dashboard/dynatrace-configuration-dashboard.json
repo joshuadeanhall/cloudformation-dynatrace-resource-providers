@@ -85,6 +85,10 @@
         "DynamicFilters": {
           "$ref": "#/definitions/DynamicFilters"
         },
+        "HasConsistentColors": {
+          "description": "JOSH FIX",
+          "type": "boolean"
+        },
         "TilesNameSize": {
           "description": "The general size of the tiles tile. Default value is medium",
           "type": "string",
@@ -172,13 +176,35 @@
         "$ref": "#/definitions/Tile"
       }
     },
-    "Id": {
-      "description": "The ID of the dashboard.",
-      "type": "string"
-    },
     "Tile": {
       "description": "Configuration of a tile.\n\nThe actual set of fields depends on the type of the tile. Find the list of actual objects in the description of the tileType field or see Dashboards API - Tile JSON models (https://dt-url.net/2wc3spx).",
-      "type": "object"
+      "type": "object",
+      "properties": {
+        "Name": {
+          "description": "Josh Name",
+          "type": "string"
+        },
+	"NameSize": {
+	   "description": "Name size",
+	   "type": "string"
+	},
+        "TileType": {
+          "description": "Josh Name",
+          "type": "string"
+        },
+        "Configured": {
+          "description": "Josh Name",
+          "type": "boolean"
+        },
+        "Bounds": {
+          "description": "Josh Name",
+          "type": "object"
+        },
+        "TileFilter": {
+          "description": "Josh Name",
+          "type": "object"
+        }
+      }
     }
   },
   "typeConfiguration": {
@@ -203,7 +229,8 @@
       "$ref": "#/definitions/Tiles"
     },
     "Id": {
-      "$ref": "#/definitions/Id"
+      "description": "Unique key for app",
+      "type": "string"
     }
   },
   "additionalProperties": false,
